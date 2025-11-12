@@ -1,10 +1,16 @@
-# ALX Travel App 0x00
+# alx_travel_app_0x00
 
-## Overview
-This project is a duplicate of `alx_travel_app`, refactored for **Database Modeling and Data Seeding in Django**.  
-It includes models for Listings, Bookings, and Reviews, along with serializers and a management command to seed the database.
+## 0. Database Modeling and Data Seeding in Django
+
+### Objective
+This project demonstrates how to define database models in Django, create serializers for API data representation, and implement a management command to seed the database with sample data.
 
 ---
 
-## Project Structure
-
+### Project Setup
+1. Duplicate the original project `alx_travel_app` into `alx_travel_app_0x00`.
+2. Make sure you have a Python virtual environment set up and Django installed.
+3. Apply migrations:
+```bash
+python manage.py makemigrations
+python manage.py migrate
