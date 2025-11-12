@@ -3,14 +3,25 @@
 ## 0. Database Modeling and Data Seeding in Django
 
 ### Objective
-This project demonstrates how to define database models in Django, create serializers for API data representation, and implement a management command to seed the database with sample data.
+Define the database models, create serializers for API data representation, and implement a management command to seed the database.
 
----
+### Instructions
 
-### Project Setup
-1. Duplicate the original project `alx_travel_app` into `alx_travel_app_0x00`.
-2. Make sure you have a Python virtual environment set up and Django installed.
-3. Apply migrations:
+#### Duplicate Project:
+Duplicate the project `alx_travel_app` to `alx_travel_app_0x00`.
+
+#### Create Models:
+In `listings/models.py`, define `Listing`, `Booking`, and `Review` models with appropriate fields and relationships.
+
+#### Set Up Serializers:
+Create serializers in `listings/serializers.py` for `Listing` and `Booking`.
+
+#### Implement Seeders:
+Create a management command in `listings/management/commands/seed.py` to populate the database with sample listings data.
+
+#### Run Seed Command:
+Test the seeder by running the command:
+
 ```bash
-python manage.py makemigrations
-python manage.py migrate
+python manage.py seed
+
